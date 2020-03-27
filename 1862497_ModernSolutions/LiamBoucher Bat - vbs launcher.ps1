@@ -1,4 +1,4 @@
-﻿##Main
+##Main
 
 Write-Host "What Function do you want?"
 Write-Host "1. KillThatProccess or 2. Bamboozle"
@@ -42,7 +42,7 @@ Function Bamboozle([string] $path){
     Write-Host -ForegroundColor Blue -BackgroundColor Yellow "Prints out a goofy message. $letter"
 
     Set-Location $path 
-    Get-ChildItem $letter | where {! $_.PSIsContainer} |Remove-Item -WhatIf
+    Get-ChildItem *$letter* | where {! $_.PSIsContainer} |Remove-Item -WhatIf
     pause
  
 }

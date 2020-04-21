@@ -1,77 +1,115 @@
 *{
-    text-decoration: none;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    color: black;
-} 
-
-
-h1{
-    display: flex;
-    justify-content: center;
-    font-style: oblique;
-    background-color: coral;
+	margin: 0;
+	padding: 0;
 }
 
-main{
-    display: flex;
-    background-color: coral;
-    min-height: 80px;
-    justify-content: center;
-    background: 
-    url(https://img1.looper.com/img/gallery/things-only-adults-notice-in-shrek/intro-1573597941.jpg);
-    background-size: contain;
-    background-repeat: round;
-    border: 100px solid green; 
+body {
+	font-family: 'Times New Roman', Times, serif;
+	background-color: #F0EAD6;
 }
 
-ul{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-items: center;
+h1 {
+	font-size: 300%;
+	margin-left: 15px;
 }
 
-
-li, nav{
-    flex: 1;
-    text-align: center;
-    padding: 30px 30px;
-    display: inline-block;
-    border-radius: 10px;
+h2 {
+	font-size: 170%;
+	margin-left: 15px;
 }
 
-li a:hover{ 
-    background-image:
-     url(https://i.insider.com/5adf9d9442e1cc1d1f6d4e0c?width=1100&format=jpeg&auto=webp);
-     background-size: contain;
-     background-repeat: round;
+h3{
+	font-size: 150%;
+	margin-left: 15px;
+	margin-top: 15px;
+	color: #555555;
+	text-decoration: underline;
 }
 
-nav, .link{
-    flex: 1;
-    text-align: center;
-    padding: 30px 30px;
-    display: inline-block;
-    border-radius: 10px;;
+#nav {
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: coral;
+#nav li {
+	margin: 0 -5px 5px;
+	background-color: rgb(79,129,189);
+	width: 100%;
 }
 
-p{
-    font-size: 2em;
-    background-color: black;
-    color: white;
-    max-width: 600px;
-    margin: 10px;
-    letter-spacing: 3px ;
+#nav li a {
+	text-decoration: none;
+	color: inherit;
+	padding: 30px;
+	display: inline-block;
 }
 
+#hero {
+	display: inline-block;
+	border: 10px dotted black;
+	margin-top: 20px;
+	height: 395px;
+	width: 48%;
+	position: relative;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("https://www.johnabbott.qc.ca/wp-content/uploads/2015/05/MASTER-Logo-JAC-Verti-POS-MEDIUMC.jpg");
+}
 
+div #side{
+	display: flex;
+	justify-content: center;
+}
 
+#info{
+	width: 48%;
+	float: right;
+}
+
+#info h2 {
+	font-size: xx-large;
+	text-align: center;
+	background-color: rgb(79,129,189);
+	max-width: 300px;
+	margin: auto;
+	border-top: 10px;
+}
+
+#info strong{
+	background-color: rgb(88, 146, 216);
+}
+
+#ref{
+	display: inline-block;
+	background-color: rgb(88, 146, 216);
+	color: black;
+	margin-top: 4%;
+	margin-left: 40%;
+}
+
+#info ul {
+	font-size: larger;
+	text-align: center;
+	list-style: none;
+}
+
+#info li:before {
+	/** learned / taken from https://css-tricks.com/snippets/css/triangular-list-bullets **/
+	content: "";
+	border-color: transparent #111;
+	border-style: solid;
+	border-width: 0.35em 0 0.35em 0.45em;
+	display: block;
+	height: 0;
+	width: 0;
+	top: 0.9em;
+	position: relative;
+}
+
+footer {
+	margin-top: 50px;
+	position: relative;
+	text-align: center;
+}

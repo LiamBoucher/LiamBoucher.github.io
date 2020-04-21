@@ -1,37 +1,115 @@
-<!DOCTYPE html>
-<html>
+*{
+	margin: 0;
+	padding: 0;
+}
 
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8" />
-    <title>Ass 3</title>
-    <h1 id="title"><br>Its ogre time :\</h1>
-</head>
+body {
+	font-family: 'Times New Roman', Times, serif;
+	background-color: #F0EAD6;
+}
 
-<body>
-    <main>
-        <ul>
-            <li>
-                <nav> 
-                    <mark> 
-                        <a href="#">Please click on the link !!!! </a>
-                    </mark>
-                </nav>
+h1 {
+	font-size: 300%;
+	margin-left: 15px;
+}
 
-            <li>
-                <a class="link" href="https://github.com/LiamBoucher/LiamBoucher.github.io/archive/master.zip"
-                > <mark> click here</mark> </a>
-            </li>
-        </ul>
-    </main>
-</body>
+h2 {
+	font-size: 170%;
+	margin-left: 15px;
+}
 
-<footer>
-    <div>
-        <p>All characters and events in this website --even those based on real people-- are entirely fictional. 
-            All celebrity pictures are copy pasted... poorly. The following website does not contain coarse language and due to its content it should not be viewed by anyone.</p>
-        <span> All images are under copyright &copy;</span>
-    </div>
-</footer>
+h3{
+	font-size: 150%;
+	margin-left: 15px;
+	margin-top: 15px;
+	color: #555555;
+	text-decoration: underline;
+}
 
-</html>
+#nav {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+#nav li {
+	margin: 0 -5px 5px;
+	background-color: rgb(79,129,189);
+	width: 100%;
+}
+
+#nav li a {
+	text-decoration: none;
+	color: inherit;
+	padding: 30px;
+	display: inline-block;
+}
+
+#hero {
+	display: inline-block;
+	border: 10px dotted black;
+	margin-top: 20px;
+	height: 395px;
+	width: 48%;
+	position: relative;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("https://www.johnabbott.qc.ca/wp-content/uploads/2015/05/MASTER-Logo-JAC-Verti-POS-MEDIUMC.jpg");
+}
+
+div #side{
+	display: flex;
+	justify-content: center;
+}
+
+#info{
+	width: 48%;
+	float: right;
+}
+
+#info h2 {
+	font-size: xx-large;
+	text-align: center;
+	background-color: rgb(79,129,189);
+	max-width: 300px;
+	margin: auto;
+	border-top: 10px;
+}
+
+#info strong{
+	background-color: rgb(88, 146, 216);
+}
+
+#ref{
+	display: inline-block;
+	background-color: rgb(88, 146, 216);
+	color: black;
+	margin-top: 4%;
+	margin-left: 40%;
+}
+
+#info ul {
+	font-size: larger;
+	text-align: center;
+	list-style: none;
+}
+
+#info li:before {
+	/** learned / taken from https://css-tricks.com/snippets/css/triangular-list-bullets **/
+	content: "";
+	border-color: transparent #111;
+	border-style: solid;
+	border-width: 0.35em 0 0.35em 0.45em;
+	display: block;
+	height: 0;
+	width: 0;
+	top: 0.9em;
+	position: relative;
+}
+
+footer {
+	margin-top: 50px;
+	position: relative;
+	text-align: center;
+}

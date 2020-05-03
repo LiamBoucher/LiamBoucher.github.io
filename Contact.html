@@ -1,0 +1,84 @@
+<head>
+    <link rel="stylesheet" href="CvLiam.css">
+    <meta charset="utf-8" />
+    <title>Liam Boucher</title>
+</head>
+
+<body>
+
+    <div>
+        <ul id="nav">
+            <li>
+                <a href="CVLIAMBOUCHER.html">Home</a>
+            </li>
+            <li>
+                <a href="Influences.html">Influences</a>
+            </li>
+            <li>
+                <a href="Contact.html">Contract Me</a>
+            </li>
+        </ul>
+    </div>
+
+    <h1>
+        Contact Me!
+    </h1>
+
+<div id = "contact">
+    <form>
+        <label for="name">
+            Name:
+        </label>
+        <input name="name" required=""></br>
+
+    </br>
+
+        <label for="email">
+            Email:
+        </label>
+        <input type="email" name="email"></br>
+
+    </br>
+
+        <label for="number">
+            Phone Number#:
+        </label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+    </br></br>
+        <p>Preffered Contact Method?</p>
+        <input type="radio" id="email" name="emailPref" value="Email">
+        <label for="pref1">Email</label>
+        </br>
+        <input type="radio" id="phone" name="phonePref" value="Phone">
+        <label for="pref2">Phone</label>
+    </br></br>
+
+        <label for="Province">Choose your province:
+        </label>
+        </br>
+        <select id="Province" name="Province">
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="MB">Manitoba</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NL">Newfoundland and Labrador</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="ON">Ontario</option>
+            <option value="PE">Prince Edward Island</option>
+            <option value="QC">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="NT">Northwest Territories</option>
+            <option value="NU">Nunavut</option>
+            <option value="YT">Yukon</option>
+        </select>
+        </br></br>
+
+        <label for="message">Please write your message here:</label></br>
+        <textarea name="message" rows="4" cols="50"></textarea></br>
+    </br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>

@@ -1,0 +1,195 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	background-color: #dae1e7;
+}
+
+h1 {
+	font-size: 300%;
+	margin-left: 15px;
+}
+
+h2 {
+	font-size: 170%;
+	margin-left: 15px;
+}
+
+h3{
+	font-size: 150%;
+	margin-left: 15px;
+	margin-top: 15px;
+	color: #555555;
+	text-decoration: underline;
+}
+
+#nav {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+#nav li {
+	margin: 0 -5px 5px;
+	background-color: #142850;
+	display: inline-block;
+	width: 33.39%;
+	color: #dae1e7;
+	font-size: larger;
+}
+
+#nav li a:hover{
+	text-decoration: none;
+	color: #00909e;
+	padding: 30px;
+}
+
+
+#nav li a {
+	text-decoration: none;
+	color: inherit;
+	padding: 30px;
+	display: inline-block;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 48% 2% 48%;
+	align-items: center;
+	margin-left: 10px;
+}
+
+#hero {
+	display: inline-block;
+	border: 10px dotted;
+	margin-top: 20px;
+	align-self: center;
+}
+
+#hero img{
+	display: block;
+	height: auto;
+	max-height: 500px;
+	align-content: center;
+	margin-left: 15%;
+	width: inherit;
+}
+
+div #side{
+	display: flex;
+}
+
+#info h2 {
+	font-size: xx-large;
+	text-align: center;
+	background-color: #27496d;
+	max-width: 300px;
+	margin: auto;
+	border-top: 10px;
+}
+
+#info strong{
+	background-color: #00909e;
+}
+
+#ref{
+	display: inline-block;
+	background-color: #00909e;
+	color: black;
+	margin-top: 4%;
+	margin-left: 40%;
+}
+
+#info ul {
+	font-size: larger;
+	text-align: center;
+	list-style: none;
+}
+
+#info li:before {
+	/** learned / taken from https://css-tricks.com/snippets/css/triangular-list-bullets **/
+	content: "";
+	border-color: transparent #111;
+	border-style: solid;
+	border-width: 0.35em 0 0.35em 0.45em;
+	display: block;
+	height: 0;
+	width: 0;
+	top: 0.9em;
+	position: relative;
+}
+
+.container2{
+	display: grid;
+	grid-template-columns: 48% 48%;
+	grid-row: 2;
+	align-items: center;
+	grid-gap: 15px;
+}
+
+.container2 div{
+	display: inline-block;
+	align-items: center;
+}
+
+.container2 img{
+	max-width: 80%;
+	padding: 15px;
+	margin-left: 8%;
+}
+
+.container2 p{
+	text-align: center;
+	margin-left: 6%;
+}
+
+footer {
+	margin-top: 50px;
+	position: relative;
+	text-align: center;
+}
+
+#contact{
+	display: inline-block;
+	border: 10px dotted;
+	margin-top: 20px;
+	background-color:#27496d ;
+	margin-left: 37%;
+}
+
+form{
+	margin: 15px;
+	padding: 15px;
+	background-color:#00909e ;
+}
+
+@media screen and (max-width:1238px)
+
+{
+	.container2 {
+		grid-template-columns: 90%;
+	}
+
+	.container2 img{
+		margin-left: 12%;
+	}
+
+	.container2 p{
+		text-align: center;
+		margin-left: 10%;
+	}
+
+	#hero img{
+		margin-left: 0px;
+	}
+
+	@media screen and (min-width:1238px) and (max-width:1430)
+	{
+		.container2 img{
+			margin-left: 12%;
+		}
+	}
+}
